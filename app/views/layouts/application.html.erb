@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang=cz>
+<head>
+	<%= stylesheet_link_tag "application" %>
+	
+	<%= stylesheet_link_tag "First", :media => "all" %>
+	<%= javascript_include_tag :defaults %>
+	<%= csrf_meta_tag %>
+
+	<meta charset=UTF-8>
+	<title>Stavebni Prace</title>
+	<!--[if lt IE 9]><script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script><![endif]-->
+	<link href=styles.css rel=stylesheet />
+	<!--[if lt IE 9]><link href=ie.css rel=stylesheet /><![endif]-->
+</head>
+
+<body>
+		<header>
+			<hgroup>
+				<h1><%= link_to "Stavební Firma", index_index_path %></h1>
+				<h2>Realizace a řešení stavebních projektů</h2>
+			</hgroup>
+			
+			<nav id=global>
+				<ul>
+					<li><a href="/index/index">O nás</a></li>
+					<li><%= link_to "Cosi", index_about_path %></li>
+					<li id=services>
+						<a href=#>Galerie</a>
+						<ul id=subMenu>
+							<li><a href=#>G1</a></li>
+							<li><a href=#>G2</a></li>
+							<li><a href=#>G3</a></li>
+							<li><a href=#>G4</a></li>
+							<li><a href=#>G5</a></li>
+							<li><a href=#>G6</a></li>
+							
+						
+						</ul>
+					</li>
+					<li><a href=#>Odkazy</a></li>
+					<li><a href=#>Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+
+<section id="leveMenu">
+	<nav id="vlevo1">
+	
+			<h1>Dalsi Menu</h1>
+			<ul>
+				<li><span class=twitter>12345</span> <a href=#>Twitter</a> followers</li>
+				<li><span class=rss>4321</span> <a href=#>RSS feed</a> subscribers</li>
+			</ul>
+		
+		
+		
+			<h1>Dalsi Veci</h1>
+			<ul>
+				<li><a href=#>A List of</a></li>
+				<li><a href=#>Friendly Blogs</a></li>
+				<li><a href=#>That have Exchanged</a></li>
+				<li><a href=#>Links with Us</a></li>
+			</ul>
+		
+		
+		
+			<h1>Dalsi Menu</h1>
+			<ul>
+				<li><span class=twitter>12345</span> <a href=#>Twitter</a> followers</li>
+				<li><span class=rss>4321</span> <a href=#>RSS feed</a> subscribers</li>
+			</ul>
+		
+		
+		
+			<h1>Dalsi Menu</h1>
+			<ul>
+				<li><span class=twitter>12345</span> <a href=#>Twitter</a> followers</li>
+				<li><span class=rss>4321</span> <a href=#>RSS feed</a> subscribers</li>
+			</ul>
+		
+		
+	</nav>
+
+
+	
+</section>
+
+<section id="praveMenu">
+	<nav id="vpravo1">
+	
+			`
+		
+		
+			<h1>Dalsi Menu</h1>
+			<ul>
+				<li><span class=twitter>12345</span> <a href=#>Twitter</a> followers</li>
+				<li><span class=rss>4321</span> <a href=#>RSS feed</a> subscribers</li>
+			</ul>
+		
+		
+		
+			<h1>Dalsi Menu</h1>
+			<ul>
+				<li><span class=twitter>12345</span> <a href=#>Twitter</a> followers</li>
+				<li><span class=rss>4321</span> <a href=#>RSS feed</a> subscribers</li>
+			</ul>
+		
+		
+	</nav>
+
+
+	
+</section>
+
+	
+
+<section id=obsah>
+
+<asidemiddle>
+		
+<%= yield %>			
+				 
+</asidemiddle>			
+	
+</section>	
+
+
+<footer class=clearfix>
+		
+	<p class=copyright>2012 <strong>Zyklon Company</strong>. </p>
+</footer>

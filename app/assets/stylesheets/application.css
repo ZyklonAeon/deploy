@@ -1,0 +1,247 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+html {
+  background-color: #ebe8d9;
+  background-image: -moz-linear-gradient(top, #71a4a1 0%, #81aeab 20%);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #71a4a1),color-stop(0.2, #81aeab));
+}
+body {
+  width: 1360px;
+  margin: 0 auto;
+  color: #333;
+  font: 12px/18px Corbel, Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+p { margin-bottom: 18px }
+
+strong { font-weight: bold }
+em { font-style: italic }
+
+a { color: #940033 }
+a:hover { border-bottom: 1px solid #940033 }
+a:active { border-bottom: 2px solid #940033 }
+
+h1 { font: 24px/36px Colaborate-RegularRegular, "Trebuchet MS", Arial, Helvetica, sans-serif }
+
+.newLine { display: block }
+
+
+/* HEADER */
+nav#global {
+  margin: 30px 0 40px;
+  width: 100%;
+  border-radius: 20px;
+
+  background-color: #970000;
+  background-image: -moz-linear-gradient(top, #ca0000, #970000);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ca0000),color-stop(1, #970000));
+  box-shadow: inset 0 0 15px #900, 0 0 20px #446b6b, inset 0 35px 35px -18px #ca0000;
+  
+}
+nav#global ul {
+  text-align: center;
+  height: 40px;
+  margin: 0 auto;
+  display: table;
+}
+nav#global ul li { position: relative; display: inline }
+nav#global ul li a {
+  font-size: 14px;
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  line-height: 40px;
+  padding: 0 25px;
+  color: #fff;
+}
+nav#global ul li a:hover {
+  border: none;
+  box-shadow: inset 0 0 15px #900, inset 0 -35px 35px -18px #ca0000;
+  
+  background-image: -moz-linear-gradient(bottom, #ca0000, #970000);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #ca0000),color-stop(1, #970000));
+}
+
+nav#global ul li #subMenu {
+  position: absolute;
+  top: 35px;
+  left: -387px;
+  
+  background: #970000;
+  height: 0;
+  z-index: -1;
+  border-radius: 15px;
+  
+  box-shadow: 0 0 10px #444, inset 0 0 15px #900, inset 0 35px 35px -18px #ca0000;
+  
+  background-image: -moz-linear-gradient(top, #ca0000, #970000);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ca0000),color-stop(1, #970000));
+}
+nav#global ul li #subMenu li {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+nav#global ul li #subMenu li a {
+  height: 0;
+  line-height: 0;
+  width: 150px;
+}
+#subMenu li:first-child a {
+  border-top-left-radius: 15px;
+  
+  border-top-right-radius: 15px;
+  
+}
+#subMenu li:last-child a {
+  border-bottom-left-radius: 15px;
+  
+  border-bottom-right-radius: 15px;
+  
+}
+
+#services a {
+  transition: all 0.3s linear;
+  
+}
+#services:hover > #subMenu { z-index: 2 }
+#services:hover > #subMenu li a { height: 40px; line-height: 40px }
+
+
+
+/* MAIN */
+section#leveMenu{
+  
+  width: 15%;
+  float: left;
+  margin-bottom: 30px;
+  
+  margin-left: 10px;
+  border-radius: 20px;
+  
+  
+}
+
+section#praveMenu{
+  
+  width: 15%;
+  float: right;
+  margin-bottom: 30px;
+  
+  margin-right: 10px;
+  border-radius: 20px;
+  
+  
+}
+
+
+
+section#obsah{
+  
+  
+  width: 67%;
+  margin-bottom: 30px;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 20px;
+  
+  
+  
+}
+
+
+
+
+
+/* SIDEBAR */
+
+
+aside2 {
+  
+  float: left;
+  background: CadetBlue;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px Black;
+  
+}
+aside {
+  
+  float: left;
+  background: Brown;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px Black;
+  
+  
+  
+}
+
+nav#vpravo1,nav#vpravo2 {
+  
+  float: right;
+  background: Brown;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px Black;
+  
+}
+nav#vpravo2 {
+  
+  
+  background: CadetBlue;
+  
+  
+  
+  
+}
+nav#vlevo1,nav#vlevo2 {
+  
+  float: left;
+  background: Brown;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px Black;
+  
+}
+
+
+
+/* FOOTER */
+
+
+.copyright {
+  text-align: center;
+  margin: 10px 0 30px;
+  clear: both;
+}

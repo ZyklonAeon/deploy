@@ -1,0 +1,27 @@
+<h1>Listing novinkies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @novinkies.each do |novinky| %>
+  <tr>
+    <td><%= novinky.name %></td>
+    <td><%= novinky.title %></td>
+    <td><%= novinky.content %></td>
+    <td><%= link_to 'Show', novinky %></td>
+    <td><%= link_to 'Edit', edit_novinky_path(novinky) %></td>
+    <td><%= link_to 'Destroy', novinky, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Novinky', new_novinky_path %>
