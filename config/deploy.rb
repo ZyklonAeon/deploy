@@ -1,7 +1,7 @@
 require 'bundler/capistrano'
 
 set :application, "first"
-set :repository, "cesta_k_vasemu_repositari"
+set :repository, "https://ZyklonAeon@github.com/ZyklonAeon/deploy.git"
 set :scm, "git"
 
 role :web, "server3.railshosting.cz"

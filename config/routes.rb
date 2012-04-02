@@ -1,11 +1,7 @@
 First::Application.routes.draw do
-  resources :novinkies
-
   get "index/about"
 
   get "index/index"
-
-  resources :products
   root :to => 'index#index', :as => 'index'
 
 

@@ -18,6 +18,7 @@ html {
 }
 body {
   width: 1360px;
+  
   margin: 0 auto;
   color: #333;
   font: 12px/18px Corbel, Arial, Helvetica, sans-serif;
@@ -122,17 +123,7 @@ nav#global ul li #subMenu li a {
 
 
 /* MAIN */
-section#leveMenu{
-  
-  width: 15%;
-  float: left;
-  margin-bottom: 30px;
-  
-  margin-left: 10px;
-  border-radius: 20px;
-  
-  
-}
+
 
 section#praveMenu{
   
@@ -142,7 +133,7 @@ section#praveMenu{
   
   margin-right: 10px;
   border-radius: 20px;
-  
+  height: 900px;
   
 }
 
@@ -151,10 +142,10 @@ section#praveMenu{
 section#obsah{
   
   
-  width: 67%;
+  
   margin-bottom: 30px;
   
-  margin-left: auto;
+  margin-left: 45px;
   margin-right: auto;
 
   border-radius: 20px;
@@ -170,38 +161,11 @@ section#obsah{
 /* SIDEBAR */
 
 
-aside2 {
-  
-  float: left;
-  background: CadetBlue;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  padding: 15px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0 10px Black;
-  
-}
-aside {
-  
-  float: left;
-  background: Brown;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  padding: 15px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0 10px Black;
-  
-  
-  
-}
+
 
 nav#vpravo1,nav#vpravo2 {
   
-  float: right;
+  float: grey;
   background: Brown;
   margin-bottom: 30px;
   margin-right: 10px;
@@ -212,28 +176,12 @@ nav#vpravo1,nav#vpravo2 {
   box-shadow: 0 0 10px Black;
   
 }
-nav#vpravo2 {
-  
-  
-  background: CadetBlue;
+
   
   
   
   
-}
-nav#vlevo1,nav#vlevo2 {
-  
-  float: left;
-  background: Brown;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  padding: 15px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0 10px Black;
-  
-}
+
 
 
 
