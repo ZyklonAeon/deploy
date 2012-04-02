@@ -1,0 +1,2 @@
+module FotkiesHelper
+end

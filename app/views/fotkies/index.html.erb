@@ -1,0 +1,22 @@
+<h1>Listing fotkies</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fotkies.each do |fotky| %>
+  <tr>
+    <td><%= link_to 'Show', fotky %></td>
+    <td><%= link_to 'Edit', edit_fotky_path(fotky) %></td>
+    <td><%= link_to 'Destroy', fotky, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fotky', new_fotky_path %>
+<img src="app/assets/images/rails.jpg">

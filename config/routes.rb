@@ -1,4 +1,6 @@
 First::Application.routes.draw do
+  resources :fotkies
+
   get "index/about"
 
   get "index/index"
